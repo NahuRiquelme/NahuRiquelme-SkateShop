@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  border-style: none;
+}
+
+nav {
+  background-color: #d9d9d9;
+  height: 80px;
+  width: 100%;
+}
+
+.enlace {
+  position: absolute;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+li a:hover {
+  background: rgb(113, 113, 117);
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 40px;
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+main {
+  background-color: #07393c;
+  height: auto;
+}
+
+.productosjuntos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 100px 0 100px 0;
+  gap: 20px;
+}
+
+.productoimagen img {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.descripcion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 450px;
+  height: auto;
+  gap: 20px;
+}
+
+.textoyprecio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botones {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.botones button {
+  width: 148px;
+  height: 40px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.botones button:hover {
+  background: rgb(64, 64, 68);
+  transition: 0.5s;
+}
+
+h1,
+h3,
+p {
+  color: white;
+}
+
+.footer {
+  background-color: #2c666e;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 3rem;
+}
+
+.footercomponentes {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 13rem;
+}
+
+.footer-logos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 2rem;
+  width: 25px;
+  height: 25px;
+  margin-top: 20px;
+}
+
+.pagos {
+  width: 170px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(122, 122, 122);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+    border-radius: 5px;
+  }
+  li a:hover {
+    background: none;
+    color: red;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .footercomponentes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0rem;
+  }
+
+  .productosjuntos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .productoimagen img {
+    width: 300px;
+    height: 300px;
+    border-radius: 40px;
+    padding: 20px;
+  }
+
+  .tamaño {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  .descripcion {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    margin: -23px;
+    gap: 0;
+  }
+
+  .textoyprecio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .botones {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .botones button {
+    width: 128px;
+    height: 35px;
+    border-radius: 15px;
+    align-items: center;
+  }
+
+  .parrafo-desc {
+    display: none;
+  }
+}
